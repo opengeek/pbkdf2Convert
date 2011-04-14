@@ -1,0 +1,5 @@
+Changelog for pbkdf2Convert.
+
+pbkdf2Convert 1.0.0-rc1
+========================
+- Initial release.
