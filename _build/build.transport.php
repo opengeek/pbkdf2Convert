@@ -35,7 +35,7 @@ set_time_limit(0);
 define('PKG_NAME','pbkdf2Convert');
 define('PKG_NAME_LOWER',strtolower(PKG_NAME));
 define('PKG_VERSION','1.0.0');
-define('PKG_RELEASE','rc1');
+define('PKG_RELEASE','pl');
 
 /* define sources */
 $root = dirname(dirname(__FILE__)).'/';
@@ -75,8 +75,8 @@ $plugin->fromArray(array(
     'id' => 0,
     'name' => 'pbkdf2Convert',
     'description' => 'Migrate md5 user passwords to pbkdf2 format on Login',
-    'snippet' => file_get_contents($sources['source_core'].'/elements/plugins/plugin.pbkdf2convert.php'),
 ),'',true,true);
+$plugin->set('plugincode', file_get_contents($sources['source_core'].'/elements/plugins/plugin.pbkdf2convert.php'));
 $vehicle = $builder->createVehicle($plugin, $attr);
 
 $modx->log(modX::LOG_LEVEL_INFO,'Adding resolvers to plugin...');
