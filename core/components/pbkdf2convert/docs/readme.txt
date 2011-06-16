@@ -1,7 +1,7 @@
 --------------------
 pbkdf2Convert
 --------------------
-Version: 1.0.0-rc1
+Version: 1.0.0-pl
 Author: Jason Coward <jason+pbkdf2convert@modx.com>
 --------------------
 
